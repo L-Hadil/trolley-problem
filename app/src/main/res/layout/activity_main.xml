@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Layout du menu -->
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/buttonWithEmotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AVEC ÉMOTION" />
+
+        <Button
+            android:id="@+id/buttonWithoutEmotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SANS ÉMOTION"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <!-- Conteneur du fragment noir -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>
